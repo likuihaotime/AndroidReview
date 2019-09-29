@@ -1,0 +1,16 @@
+setCompoundDrawables
+
+Drawable  dra= getResources().getDrawable(R.drawable.button_yjt);
+dra.setBounds( 0, 0, dra.getMinimumWidth(),dra.getMinimumHeight());
+btn1.setCompoundDrawables(null, null, dra, null);
+setBounds(left, top, right, bottom);
+推算日期
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+Date dBefore = new Date();
+Calendar calendar = Calendar.getInstance();
+calendar.setTime(new Date());
+calendar.add(Calendar.DAY_OF_MONTH,-1);//往上推一天  30推三十天  365推一年
+mBefore = calendar.getTime();
+
+绘制虚线
+https://blog.csdn.net/u010015933/article/details/76850020
